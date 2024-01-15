@@ -34,39 +34,69 @@ class Program
             {
                 case 1:
                     Console.Write("Enter course code: ");
-                    string code = Console.ReadLine();
+                    string? code = Console.ReadLine();
                     Console.Write("Enter course name: ");
-                    string name = Console.ReadLine();
+                    string? name = Console.ReadLine();
                     Console.Write("Enter course description: ");
-                    string description = Console.ReadLine();
-                    Course course = new Course(code, name, description);
-                    courses.Add(course);
+                    string? description = Console.ReadLine();
+                    if (code != null && name != null && description != null)
+                    {
+                        Course course = new Course(code, name, description);
+                        courses.Add(course);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Course code, name, or description is null.");
+                    }
                     break;
                 case 2:
                     Console.Write("Enter student name: ");
-                    string studentName = Console.ReadLine();
+                    string? studentName = Console.ReadLine();
                     Console.Write("Enter student classification: ");
-                    string studentClassification = Console.ReadLine();
-                    Person student = new Person(studentName, studentClassification);
-                    students.Add(student);
+                    string? studentClassification = Console.ReadLine();
+                    Console.Write("Enter student grades (comma-separated): ");
+                    string? gradesInput = Console.ReadLine();
+                    List<double>? grades = gradesInput?.Split(',').Select(double.Parse).ToList();
+                    if (studentName != null && studentClassification != null && grades != null)
+                    {
+                        Person? student = new Person(studentName, studentClassification, grades);
+                        students.Add(student);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Student name, classification, or grades are null.");
+                    }
                     break;
                 case 3:
                     Console.Write("Enter course code: ");
-                    string courseCode = Console.ReadLine();
+                    string? courseCode = Console.ReadLine();
                     Console.Write("Enter student name: ");
-                    string studentName2 = Console.ReadLine();
-                    Course course2 = courses.Find(c => c.Code == courseCode);
-                    Person student2 = students.Find(s => s.Name == studentName2);
-                    course2.Roster.Add(student2.Name);
+                    string? studentName2 = Console.ReadLine();
+                    Course? course2 = courses.Find(c => c.Code == courseCode);
+                    Person? student2 = students.Find(s => s.Name == studentName2);
+                    if (course2 != null && student2 != null && student2.Name != null)
+                    {
+                        course2.Roster.Add(student2.Name);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Course or student not found.");
+                    }
                     break;
                 case 4:
                     Console.Write("Enter course code: ");
-                    string courseCode2 = Console.ReadLine();
+                    string? courseCode2 = Console.ReadLine();
                     Console.Write("Enter student name: ");
-                    string studentName3 = Console.ReadLine();
-                    Course course3 = courses.Find(c => c.Code == courseCode2);
-                    Person student3 = students.Find(s => s.Name == studentName3);
-                    course3.Roster.Remove(student3.Name);
+                    string? studentName3 = Console.ReadLine();
+                    Course? course3 = courses.Find(c => c.Code == courseCode2);
+                    Person? student3 = students.Find(s => s.Name == studentName3);
+                    if (course3 != null && student3 != null && student3.Name != null){
+                        course3.Roster.Remove(student3.Name);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Course or student not found.");
+                    }
                     break;
                 case 5:
                     foreach (Course c in courses)
@@ -76,8 +106,8 @@ class Program
                     break;
                 case 6:
                     Console.Write("Enter course code: ");
-                    string courseCode3 = Console.ReadLine();
-                    Course course4 = courses.Find(c => c.Code == courseCode3);
+                    string? courseCode3 = Console.ReadLine();
+                    Course? course4 = courses.Find(c => c.Code == courseCode3);
                     Console.WriteLine(course4);
                     break;
                 case 7:
@@ -88,16 +118,22 @@ class Program
                     break;
                 case 8:
                     Console.Write("Enter student name: ");
-                    string studentName4 = Console.ReadLine();
-                    Person student4 = students.Find(s => s.Name == studentName4);
-                    Console.WriteLine(student4);
+                    string? studentName4 = Console.ReadLine();
+                    Person? student4 = students.Find(s => s.Name == studentName4);
+                    if(student4 != null){
+                        Console.WriteLine(student4);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Student not found.");
+                    }
                     break;
                 case 9:
                     Console.Write("Enter student name: ");
-                    string studentName5 = Console.ReadLine();
+                    string? studentName5 = Console.ReadLine();
                     foreach (Course course5 in courses)
                     {
-                        if (course5.Roster.Contains(studentName5))
+                        if (studentName5 != null && course5.Roster.Contains(studentName5))
                         {
                             Console.WriteLine($"Student {studentName5} is in course {course5.Code}");
                         }
@@ -105,43 +141,72 @@ class Program
                     break;
                 case 10:
                     Console.Write("Enter course code: ");
-                    string courseCode5 = Console.ReadLine();
-                    Course course6 = courses.Find(c => c.Code == courseCode5);
+                    string? courseCode5 = Console.ReadLine();
+                    Course? course6 = courses.Find(c => c.Code == courseCode5);
                     Console.Write("Enter course name: ");
-                    string name2 = Console.ReadLine();
+                    string? name2 = Console.ReadLine();
                     Console.Write("Enter course description: ");
-                    string description2 = Console.ReadLine();
-                    course6.Name = name2;
-                    course6.Description = description2;
+                    string? description2 = Console.ReadLine();
+                    if (name2 != null && description2 != null && course6 != null)
+                    {
+                        course6.Name = name2;
+                        course6.Description = description2;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Course name or description is null.");
+                    }
                     break;
                 case 11:
                     Console.Write("Enter student name: ");
-                    string studentName6 = Console.ReadLine();
-                    Person student6 = students.Find(s => s.Name == studentName6);
+                    string? studentName6 = Console.ReadLine();
+                    Person? student6 = students.Find(s => s.Name == studentName6);
                     Console.Write("Enter student classification: ");
-                    string classification2 = Console.ReadLine();
-                    student6.Classification = classification2;
+                    string? classification2 = Console.ReadLine();
+                    Console.Write("Enter student grades (comma-separated): ");
+                    string? gradesUpdate = Console.ReadLine();
+                    List<Double>? gradesUpdated = gradesUpdate?.Split(',').Select(Double.Parse).ToList();
+                    if (classification2 != null && student6 != null && gradesUpdated != null)
+                    {
+                        student6.Classification = classification2;
+                        student6.Grades = gradesUpdated;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Student classification or grades are null.");
+                    }
                     break;
                 case 12:
                     Console.Write("Enter course code: ");
-                    string courseCode6 = Console.ReadLine();
-                    Course course7 = courses.Find(c => c.Code == courseCode6);
+                    string? courseCode6 = Console.ReadLine();
+                    Course? course7 = courses.Find(c => c.Code == courseCode6);
                     Console.Write("Enter assignment name: ");
-                    string name3 = Console.ReadLine();
+                    string? name3 = Console.ReadLine();
                     Console.Write("Enter assignment description: ");
-                    string description3 = Console.ReadLine();
+                    string? description3 = Console.ReadLine();
                     Console.Write("Enter assignment total available points: ");
                     int totalAvailablePoints = Convert.ToInt32(Console.ReadLine());
                     Console.Write("Enter assignment due date: ");
                     DateTime dueDate = Convert.ToDateTime(Console.ReadLine());
+                    if (name3 == null || description3 == null)
+                    {
+                        Console.WriteLine("Assignment name or description is null.");
+                        break;
+                    }
+                    else if (course7 == null)
+                    {
+                        Console.WriteLine("Course not found.");
+                        break;
+                    }
                     Assignment assignment = new Assignment(name3, description3, totalAvailablePoints, dueDate);
                     course7.Assignments.Add(assignment);
                     break;
                 case 13:
                     Console.Write("Enter course code: ");
-                    string courseCode7 = Console.ReadLine();
-                    Course course8 = courses.Find(c => c.Code == courseCode7);
+                    string? courseCode7 = Console.ReadLine();
+                    Course? course8 = courses.Find(c => c.Code == courseCode7);
                     Console.WriteLine(course8);
+                    
                     break;
              } } while (choice != 0);
         }

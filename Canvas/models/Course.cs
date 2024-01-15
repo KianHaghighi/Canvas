@@ -9,6 +9,10 @@ public class Course
     public List<string> Roster { get; set; }
     public List<Assignment> Assignments { get; set; }
     public List<string> Modules { get; set; }
+    public override string ToString()
+    {
+        return $"Course Code: {Code}, Name: {Name}, Description: {Description}";
+    }
  
     public Course()
     {

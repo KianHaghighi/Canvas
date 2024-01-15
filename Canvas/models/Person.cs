@@ -7,10 +7,15 @@ public class Person
     public string? Classification { get; set; }
     public List<double> Grades { get; set; }
 
-    public Person(string name, string classification)
+    public override string ToString()
+    {
+    string gradesString = string.Join(", ", Grades);
+    return $"Name: {Name}, Classification: {Classification}, Grades: {gradesString}";
+    }
+    public Person(string name, string classification, List<double> grades)
     {
         Name = name;
         Classification = classification;
-        Grades = new List<double>();
+        Grades = grades;
     }
 }
