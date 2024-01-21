@@ -10,9 +10,12 @@ public class Course
     public List<Assignment> Assignments { get; set; }
     public List<string> Modules { get; set; }
     public override string ToString()
-    {
-        return $"Course Code: {Code}, Name: {Name}, Description: {Description}";
-    }
+{
+    string rosterString = string.Join(", ", Roster);
+    string assignmentsString = string.Join(", ", Assignments.Select(a => a.ToString()));
+    string modulesString = string.Join(", ", Modules);
+    return $"Course Code: {Code}, Name: {Name}, Description: {Description}, Roster: {rosterString}, Assignments: {assignmentsString}, Modules: {modulesString}";
+}
  
     public Course()
     {

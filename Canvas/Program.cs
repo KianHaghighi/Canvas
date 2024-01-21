@@ -25,7 +25,6 @@ class Program
             Console.WriteLine("10. Update a course’s information");
             Console.WriteLine("11. Update a student’s information");
             Console.WriteLine("12. Create an assignment for a course");
-            Console.WriteLine("13. Show course information");
             Console.WriteLine("0. Exit");
             Console.Write("Enter your choice: ");
             choice = Convert.ToInt32(Console.ReadLine());
@@ -101,6 +100,7 @@ class Program
                 case 5:
                     foreach (Course c in courses)
                     {
+                        Console.WriteLine(c.Code);
                         Console.WriteLine(c.Name);
                     }
                     break;
@@ -200,13 +200,6 @@ class Program
                     }
                     Assignment assignment = new Assignment(name3, description3, totalAvailablePoints, dueDate);
                     course7.Assignments.Add(assignment);
-                    break;
-                case 13:
-                    Console.Write("Enter course code: ");
-                    string? courseCode7 = Console.ReadLine();
-                    Course? course8 = courses.Find(c => c.Code == courseCode7);
-                    Console.WriteLine(course8);
-                    
                     break;
              } } while (choice != 0);
         }
