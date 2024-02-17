@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using Canvas.models;
+using Canvas.Helpers;
+
 
 class Program
 {
     static List<Course> courses = new List<Course>();
     static List<Person> students = new List<Person>();
+
 
     static void Main(string[] args)
     {
@@ -28,6 +31,7 @@ class Program
             Console.WriteLine("0. Exit");
             Console.Write("Enter your choice: ");
             choice = Convert.ToInt32(Console.ReadLine());
+
 
             switch (choice)
             {
@@ -98,28 +102,23 @@ class Program
                     }
                     break;
                 case 5:
-                    foreach (Course c in courses)
-                    {
-                        Console.WriteLine(c.Code);
-                        Console.WriteLine(c.Name);
-                    }
+                    CourseHelper.ListAllCourses(courses);
                     break;
+
+
                 case 6:
                     Console.Write("Enter course code: ");
                     string? courseCode3 = Console.ReadLine();
-                    Course? course4 = courses.Find(c => c.Code == courseCode3);
+                    Course? course4 = CourseHelper.FindCourseByCode(courses, courseCode3);
                     Console.WriteLine(course4);
                     break;
                 case 7:
-                    foreach (Person s in students)
-                    {
-                        Console.WriteLine(s.Name);
-                    }
+                    PersonHelper.ListAllPersons(students);
                     break;
                 case 8:
                     Console.Write("Enter student name: ");
                     string? studentName4 = Console.ReadLine();
-                    Person? student4 = students.Find(s => s.Name == studentName4);
+                    Person? student4 = PersonHelper.FindPersonByName(students, studentName4);
                     if(student4 != null){
                         Console.WriteLine(student4);
                     }
@@ -142,38 +141,34 @@ class Program
                 case 10:
                     Console.Write("Enter course code: ");
                     string? courseCode5 = Console.ReadLine();
-                    Course? course6 = courses.Find(c => c.Code == courseCode5);
                     Console.Write("Enter course name: ");
                     string? name2 = Console.ReadLine();
                     Console.Write("Enter course description: ");
                     string? description2 = Console.ReadLine();
-                    if (name2 != null && description2 != null && course6 != null)
+                    if (name2 != null && description2 != null && courseCode5 != null)
                     {
-                        course6.Name = name2;
-                        course6.Description = description2;
+                        CourseHelper.UpdateCourseDetails(courses, courseCode5, name2, description2);
                     }
                     else
                     {
-                        Console.WriteLine("Course name or description is null.");
+                        Console.WriteLine("Course name, description or code is null.");
                     }
                     break;
                 case 11:
                     Console.Write("Enter student name: ");
                     string? studentName6 = Console.ReadLine();
-                    Person? student6 = students.Find(s => s.Name == studentName6);
                     Console.Write("Enter student classification: ");
                     string? classification2 = Console.ReadLine();
                     Console.Write("Enter student grades (comma-separated): ");
                     string? gradesUpdate = Console.ReadLine();
                     List<Double>? gradesUpdated = gradesUpdate?.Split(',').Select(Double.Parse).ToList();
-                    if (classification2 != null && student6 != null && gradesUpdated != null)
+                    if (classification2 != null && studentName6 != null && gradesUpdated != null)
                     {
-                        student6.Classification = classification2;
-                        student6.Grades = gradesUpdated;
+                        PersonHelper.UpdateStudentDetails(students, studentName6, classification2, gradesUpdated);
                     }
                     else
                     {
-                        Console.WriteLine("Student classification or grades are null.");
+                        Console.WriteLine("Student name, classification or grades are null.");
                     }
                     break;
                 case 12:
@@ -204,3 +199,4 @@ class Program
              } } while (choice != 0);
         }
 }
+
