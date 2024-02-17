@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Canvas", "Canvas\Canvas.csproj", "{FC993FE8-C57E-4F7E-83C0-9391027B8D9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Canvas", "Library.Canvas\Library.Canvas.csproj", "{FE870887-1559-44BB-AE61-28CA6F515392}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{FC993FE8-C57E-4F7E-83C0-9391027B8D9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC993FE8-C57E-4F7E-83C0-9391027B8D9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC993FE8-C57E-4F7E-83C0-9391027B8D9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE870887-1559-44BB-AE61-28CA6F515392}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE870887-1559-44BB-AE61-28CA6F515392}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE870887-1559-44BB-AE61-28CA6F515392}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE870887-1559-44BB-AE61-28CA6F515392}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

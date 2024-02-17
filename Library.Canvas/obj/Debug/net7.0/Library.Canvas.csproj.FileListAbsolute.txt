@@ -1,0 +1,12 @@
+C:\Users\kianh\CanvasApp\Canvas\Library.Canvas\bin\Debug\net7.0\Library.Canvas.deps.json
+C:\Users\kianh\CanvasApp\Canvas\Library.Canvas\bin\Debug\net7.0\Library.Canvas.dll
+C:\Users\kianh\CanvasApp\Canvas\Library.Canvas\bin\Debug\net7.0\Library.Canvas.pdb
+C:\Users\kianh\CanvasApp\Canvas\Library.Canvas\obj\Debug\net7.0\Library.Canvas.csproj.AssemblyReference.cache
+C:\Users\kianh\CanvasApp\Canvas\Library.Canvas\obj\Debug\net7.0\Library.Canvas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kianh\CanvasApp\Canvas\Library.Canvas\obj\Debug\net7.0\Library.Canvas.AssemblyInfoInputs.cache
+C:\Users\kianh\CanvasApp\Canvas\Library.Canvas\obj\Debug\net7.0\Library.Canvas.AssemblyInfo.cs
+C:\Users\kianh\CanvasApp\Canvas\Library.Canvas\obj\Debug\net7.0\Library.Canvas.csproj.CoreCompileInputs.cache
+C:\Users\kianh\CanvasApp\Canvas\Library.Canvas\obj\Debug\net7.0\Library.Canvas.dll
+C:\Users\kianh\CanvasApp\Canvas\Library.Canvas\obj\Debug\net7.0\refint\Library.Canvas.dll
+C:\Users\kianh\CanvasApp\Canvas\Library.Canvas\obj\Debug\net7.0\Library.Canvas.pdb
+C:\Users\kianh\CanvasApp\Canvas\Library.Canvas\obj\Debug\net7.0\ref\Library.Canvas.dll
