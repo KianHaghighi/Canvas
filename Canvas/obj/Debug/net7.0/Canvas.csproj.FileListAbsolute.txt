@@ -18,7 +18,6 @@ C:\Users\kianh\CanvasApp\Canvas\Canvas\bin\Debug\net7.0\Canvas.deps.json
 C:\Users\kianh\CanvasApp\Canvas\Canvas\bin\Debug\net7.0\Canvas.runtimeconfig.json
 C:\Users\kianh\CanvasApp\Canvas\Canvas\bin\Debug\net7.0\Canvas.dll
 C:\Users\kianh\CanvasApp\Canvas\Canvas\bin\Debug\net7.0\Canvas.pdb
-C:\Users\kianh\CanvasApp\Canvas\Canvas\obj\Debug\net7.0\Canvas.csproj.AssemblyReference.cache
 C:\Users\kianh\CanvasApp\Canvas\Canvas\obj\Debug\net7.0\Canvas.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\kianh\CanvasApp\Canvas\Canvas\obj\Debug\net7.0\Canvas.AssemblyInfoInputs.cache
 C:\Users\kianh\CanvasApp\Canvas\Canvas\obj\Debug\net7.0\Canvas.AssemblyInfo.cs
@@ -28,3 +27,4 @@ C:\Users\kianh\CanvasApp\Canvas\Canvas\obj\Debug\net7.0\refint\Canvas.dll
 C:\Users\kianh\CanvasApp\Canvas\Canvas\obj\Debug\net7.0\Canvas.pdb
 C:\Users\kianh\CanvasApp\Canvas\Canvas\obj\Debug\net7.0\Canvas.genruntimeconfig.cache
 C:\Users\kianh\CanvasApp\Canvas\Canvas\obj\Debug\net7.0\ref\Canvas.dll
+C:\Users\kianh\CanvasApp\Canvas\Canvas\obj\Debug\net7.0\Canvas.sourcelink.json

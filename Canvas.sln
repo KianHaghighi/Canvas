@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Canvas", "Canvas\Canvas.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Canvas", "Library.Canvas\Library.Canvas.csproj", "{FE870887-1559-44BB-AE61-28CA6F515392}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAUI.Canvas", "MAUI.Canvas\MAUI.Canvas.csproj", "{6BCF35A6-BBA2-408E-8930-6801CD821075}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,13 @@ Global
 		{FE870887-1559-44BB-AE61-28CA6F515392}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE870887-1559-44BB-AE61-28CA6F515392}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE870887-1559-44BB-AE61-28CA6F515392}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC44D270-4F2E-4190-9EDC-B5D1AC854E30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC44D270-4F2E-4190-9EDC-B5D1AC854E30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC44D270-4F2E-4190-9EDC-B5D1AC854E30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC44D270-4F2E-4190-9EDC-B5D1AC854E30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BCF35A6-BBA2-408E-8930-6801CD821075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BCF35A6-BBA2-408E-8930-6801CD821075}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BCF35A6-BBA2-408E-8930-6801CD821075}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BCF35A6-BBA2-408E-8930-6801CD821075}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
