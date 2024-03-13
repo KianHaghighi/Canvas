@@ -8,4 +8,8 @@ public partial class InstructorView : ContentPage
 		InitializeComponent();
 		BindingContext = new InstructorViewViewModel();
 	}
+	private void CancelClicked(object sender, EventArgs e)
+	{
+        Shell.Current.GoToAsync("//MainPage");
+    }
 }

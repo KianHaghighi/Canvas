@@ -13,11 +13,11 @@ public partial class MainPage : ContentPage
 	}
 	private void StudentClicked(object sender, EventArgs e)
 	{
-        Shell.Current.GoToAsync("//StudentView");
+        Shell.Current.GoToAsync("//Student");
     }
 	private void InstructorClicked(object sender, EventArgs e)
 	{
-        Shell.Current.GoToAsync("//InstructorView");
+        Shell.Current.GoToAsync("//Instructor");
     }
 }
 
