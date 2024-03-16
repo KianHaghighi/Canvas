@@ -542,3 +542,5 @@ C:\Users\kianh\CanvasApp\Canvas\MAUI.Canvas\obj\Debug\net7.0-windows10.0.19041.0
 C:\Users\kianh\CanvasApp\Canvas\MAUI.Canvas\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_7.0.1624.6629.dll
 C:\Users\kianh\CanvasApp\Canvas\MAUI.Canvas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MAUI.Canvas.sourcelink.json
 C:\Users\kianh\CanvasApp\Canvas\MAUI.Canvas\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MAUI.Can.3BF3C518.Up2Date
+C:\Users\kianh\CanvasApp\Canvas\MAUI.Canvas\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Library.Canvas.dll
+C:\Users\kianh\CanvasApp\Canvas\MAUI.Canvas\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Library.Canvas.pdb

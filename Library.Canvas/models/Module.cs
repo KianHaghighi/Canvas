@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-namespace Canvas.models;
+namespace Library.Canvas.Models;
 
 public class Module
 {

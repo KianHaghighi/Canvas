@@ -12,6 +12,10 @@
             Text="Cancel"
             Clicked="CancelClicked"
             />
+        <Button 
+            Text="Add Enrollment"
+            Clicked="AddEnrollmentClicked"
+            />
     </VerticalStackLayout>
     
 </ContentPage>

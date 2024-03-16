@@ -12,4 +12,8 @@ public partial class InstructorView : ContentPage
 	{
         Shell.Current.GoToAsync("//MainPage");
     }
+	private void AddEnrollmentClicked(object sender, EventArgs e)
+	{
+		(BindingContext as InstructorViewViewModel)?.AddEnrollmentClick(Shell.Current);
+    }
 }

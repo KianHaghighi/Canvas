@@ -1936,6 +1936,16 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        }
       }
     },
     "net7.0-android33.0/android-arm": {
@@ -3872,6 +3882,16 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
         }
       }
     },
@@ -5810,6 +5830,16 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        }
       }
     },
     "net7.0-android33.0/android-x64": {
@@ -7746,6 +7776,16 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
         }
       }
     },
@@ -9684,6 +9724,16 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        }
       }
     },
     "net7.0-android33.0/iossimulator-x64": {
@@ -11620,6 +11670,16 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
         }
       }
     },
@@ -13558,6 +13618,16 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        }
       }
     },
     "net7.0-android33.0/win10-x64": {
@@ -15495,6 +15565,16 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        }
       }
     },
     "net7.0-ios16.1": {
@@ -15690,6 +15770,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
         }
       }
     },
@@ -15887,6 +15977,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        }
       }
     },
     "net7.0-ios16.1/android-arm64": {
@@ -16082,6 +16182,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
         }
       }
     },
@@ -16279,6 +16389,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        }
       }
     },
     "net7.0-ios16.1/android-x86": {
@@ -16474,6 +16594,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
         }
       }
     },
@@ -16671,6 +16801,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        }
       }
     },
     "net7.0-ios16.1/maccatalyst-x64": {
@@ -16866,6 +17006,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
         }
       }
     },
@@ -17063,6 +17213,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        }
       }
     },
     "net7.0-maccatalyst16.1": {
@@ -17258,6 +17418,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
         }
       }
     },
@@ -17455,6 +17625,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        }
       }
     },
     "net7.0-maccatalyst16.1/android-arm64": {
@@ -17650,6 +17830,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
         }
       }
     },
@@ -17847,6 +18037,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        }
       }
     },
     "net7.0-maccatalyst16.1/android-x86": {
@@ -18042,6 +18242,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
         }
       }
     },
@@ -18239,6 +18449,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        }
       }
     },
     "net7.0-maccatalyst16.1/maccatalyst-x64": {
@@ -18435,6 +18655,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        }
       }
     },
     "net7.0-maccatalyst16.1/win10-x64": {
@@ -18630,6 +18860,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
         }
       }
     },
@@ -18954,6 +19194,16 @@
             "rid": "win10-x86"
           }
         }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        }
       }
     },
     "net7.0-windows10.0.19041/android-arm": {
@@ -19248,6 +19498,16 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
         }
       }
     },
@@ -19544,6 +19804,16 @@
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        }
       }
     },
     "net7.0-windows10.0.19041/android-x64": {
@@ -19838,6 +20108,16 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
         }
       }
     },
@@ -20134,6 +20414,16 @@
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        }
       }
     },
     "net7.0-windows10.0.19041/iossimulator-x64": {
@@ -20429,6 +20719,16 @@
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        }
       }
     },
     "net7.0-windows10.0.19041/maccatalyst-x64": {
@@ -20723,6 +21023,16 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
         }
       }
     },
@@ -21024,6 +21334,16 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "Library.Canvas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Library.Canvas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Canvas.dll": {}
         }
       }
     }
@@ -24307,10 +24627,16 @@
         "xamarin.kotlinx.coroutines.core.jvm.1.6.4.1.nupkg.sha512",
         "xamarin.kotlinx.coroutines.core.jvm.nuspec"
       ]
+    },
+    "Library.Canvas/1.0.0": {
+      "type": "project",
+      "path": "../Library.Canvas/Library.Canvas.csproj",
+      "msbuildProject": "../Library.Canvas/Library.Canvas.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0-android33.0": [
+      "Library.Canvas >= 1.0.0",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
@@ -24331,6 +24657,7 @@
       "Xamarin.Google.Crypto.Tink.Android >= 1.7.0.1"
     ],
     "net7.0-ios16.1": [
+      "Library.Canvas >= 1.0.0",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
@@ -24340,6 +24667,7 @@
       "Microsoft.NET.ILLink.Tasks >= 7.0.100-1.23211.1"
     ],
     "net7.0-maccatalyst16.1": [
+      "Library.Canvas >= 1.0.0",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
@@ -24349,6 +24677,7 @@
       "Microsoft.NET.ILLink.Tasks >= 7.0.100-1.23211.1"
     ],
     "net7.0-windows10.0.19041": [
+      "Library.Canvas >= 1.0.0",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
@@ -24394,19 +24723,35 @@
       "frameworks": {
         "net7.0-android33.0": {
           "targetAlias": "net7.0-android",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\kianh\\CanvasApp\\Canvas\\Library.Canvas\\Library.Canvas.csproj": {
+              "projectPath": "C:\\Users\\kianh\\CanvasApp\\Canvas\\Library.Canvas\\Library.Canvas.csproj"
+            }
+          }
         },
         "net7.0-ios16.1": {
           "targetAlias": "net7.0-ios",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\kianh\\CanvasApp\\Canvas\\Library.Canvas\\Library.Canvas.csproj": {
+              "projectPath": "C:\\Users\\kianh\\CanvasApp\\Canvas\\Library.Canvas\\Library.Canvas.csproj"
+            }
+          }
         },
         "net7.0-maccatalyst16.1": {
           "targetAlias": "net7.0-maccatalyst",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\kianh\\CanvasApp\\Canvas\\Library.Canvas\\Library.Canvas.csproj": {
+              "projectPath": "C:\\Users\\kianh\\CanvasApp\\Canvas\\Library.Canvas\\Library.Canvas.csproj"
+            }
+          }
         },
         "net7.0-windows10.0.19041": {
           "targetAlias": "net7.0-windows10.0.19041.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\kianh\\CanvasApp\\Canvas\\Library.Canvas\\Library.Canvas.csproj": {
+              "projectPath": "C:\\Users\\kianh\\CanvasApp\\Canvas\\Library.Canvas\\Library.Canvas.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

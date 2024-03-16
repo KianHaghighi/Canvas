@@ -1,5 +1,5 @@
 using System;
-namespace Canvas.models;
+namespace Library.Canvas.Models;
 
 public class Assignment
 {

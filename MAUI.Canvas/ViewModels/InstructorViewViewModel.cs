@@ -8,5 +8,9 @@ namespace MAUI.Canvas.ViewModels
 {
     internal class InstructorViewViewModel
     {
+        public void AddEnrollmentClick(Shell s)
+        {
+            s.GoToAsync($"//PersonDetail?personId=0");
+        }
     }
 }
