@@ -6,7 +6,8 @@ public partial class PersonDetailView : ContentPage
 	public PersonDetailView()
 	{
 		InitializeComponent();
-	}
+        BindingContext = new PersonDetailViewViewModel();
+    }
     public int PersonId
     {
         set; get;
@@ -15,7 +16,8 @@ public partial class PersonDetailView : ContentPage
     private void OkClick(object sender, EventArgs e)
     {
         //need to implement AddPerson method in PersonDetailViewViewModel
-        //(BindingContext as PersonDetailViewViewModel).AddPerson();
+        //this line is causing an error -> likely because Name is not set on the PersonDetailViewViewModel
+        (BindingContext as PersonDetailViewViewModel).AddPerson();
     }
 
     private void CancelClick(object sender, EventArgs e)

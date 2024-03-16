@@ -9,6 +9,7 @@
             VerticalOptions="Center"
             HorizontalOptions="Center"
             />
+        <Entry Text="{Binding Path=Name, Mode=TwoWay}"></Entry>
         <StackLayout RadioButtonGroup.GroupName="Classifications"
             RadioButtonGroup.SelectedValue="{Binding ClassificationString}">
             <RadioButton Content="Freshman"
@@ -20,6 +21,13 @@
             <RadioButton Content="Senior"
                          Value="S"/>
         </StackLayout>
-        
+        <Button
+            Text="Ok"
+            Clicked="OkClick"
+            />
+        <Button
+            Text="Cancel"
+            Clicked="CancelClick"
+            />
     </VerticalStackLayout>
 </ContentPage>
