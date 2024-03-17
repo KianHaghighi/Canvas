@@ -12,5 +12,9 @@ namespace MAUI.Canvas.ViewModels
         {
             s.GoToAsync($"//PersonDetail?personId=0");
         }
+        public void AddCourseClick(Shell s)
+        {
+            s.GoToAsync($"//CourseDetail");
+        }
     }
 }

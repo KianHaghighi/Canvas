@@ -16,6 +16,10 @@
             Text="Add Enrollment"
             Clicked="AddEnrollmentClicked"
             />
+        <Button 
+            Text="Add Course"
+            Clicked="AddCourseClicked"
+            />
     </VerticalStackLayout>
     
 </ContentPage>
