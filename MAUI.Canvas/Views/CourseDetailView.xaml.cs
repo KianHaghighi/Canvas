@@ -15,6 +15,6 @@ public partial class CourseDetailView : ContentPage
 
     private void OkClicked(object sender, EventArgs e)
     {
-        //(BindingContext as CourseDetailViewViewModel).AddCourse(Shell.Current);
+        (BindingContext as CourseDetailViewViewModel).AddCourse(Shell.Current);
     }
 }
