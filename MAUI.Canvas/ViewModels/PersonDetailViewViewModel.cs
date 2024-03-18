@@ -41,7 +41,5 @@ namespace MAUI.Canvas.ViewModels
             }
             Shell.Current.GoToAsync("//Instructor");
         }
-    }
-
-
+}
 }

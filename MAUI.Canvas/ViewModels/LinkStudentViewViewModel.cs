@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace MAUI.Canvas.ViewModels
 {
-    internal class StudentViewViewModel
+    internal class LinkStudentViewViewModel
     {
-        /*public void SeeEnrollmentsClick(Shell s)
+        public void LinkStudentClick(Shell s)
         {
-            s.GoToAsync($"//PersonDetail?personId=0");
-        }*/
+            s.GoToAsync($"//LinkStudent");
+        }
     }
 }

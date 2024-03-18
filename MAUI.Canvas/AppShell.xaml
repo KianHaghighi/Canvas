@@ -24,7 +24,11 @@
         ContentTemplate="{DataTemplate local2:PersonDetailView}"
         Route="PersonDetail" />
     <ShellContent
-    Title="Student"
-    ContentTemplate="{DataTemplate local2:CourseDetailView}"
-    Route="CourseDetail" />
+        Title="Student"
+        ContentTemplate="{DataTemplate local2:CourseDetailView}"
+        Route="CourseDetail" />
+    <ShellContent
+        Title="Link Student to Course"
+        ContentTemplate="{DataTemplate local2:LinkStudentView}"
+        Route="LinkStudent" />
 </Shell>

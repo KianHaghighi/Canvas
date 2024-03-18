@@ -40,5 +40,9 @@ namespace MAUI.Canvas.ViewModels
             CourseService.Current.Add(course);
             s.GoToAsync("//Instructor");
         }
+        public void AddPersonToCourse(Course course, Person person)
+        {
+            course.Roster.Add(person);
+        }
     }
 }

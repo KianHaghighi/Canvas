@@ -20,4 +20,8 @@ public partial class InstructorView : ContentPage
     {
         (BindingContext as InstructorViewViewModel).AddCourseClick(Shell.Current);
     }
+    private void LinkStudentClicked(object sender, EventArgs e)
+    {
+        (BindingContext as InstructorViewViewModel).LinkStudentClick(Shell.Current);
+    }
 }

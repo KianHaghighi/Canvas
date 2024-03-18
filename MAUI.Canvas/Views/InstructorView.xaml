@@ -20,6 +20,9 @@
             Text="Add Course"
             Clicked="AddCourseClicked"
             />
+        <Button Text="Link a Student to Course" 
+                Clicked="LinkStudentClicked" 
+        />
     </VerticalStackLayout>
     
 </ContentPage>
