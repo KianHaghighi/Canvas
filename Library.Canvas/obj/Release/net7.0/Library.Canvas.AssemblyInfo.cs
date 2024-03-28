@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Library.Canvas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77b37a4fafbb7551486363d7fef3066ebc9a078f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9ce0ae236a473a9a8bace6172395203860a61fb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Library.Canvas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Library.Canvas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

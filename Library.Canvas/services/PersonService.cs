@@ -27,12 +27,14 @@ public class PersonService
     }
     private PersonService()
     {
-       
+        //IMPLEMENT
+       // FakeDatabase.People.Add(new Person("Test", "Freshman"));
     }
 
     public void Add(Person student)
     {
         FakeDatabase.People.Add(student);
+        var test = FakeDatabase.People;
     }
 
     public void Remove(Person student)
@@ -43,4 +45,5 @@ public class PersonService
     {
         return FakeDatabase.People.FirstOrDefault(p => p.Id == id);
     }
+
 }

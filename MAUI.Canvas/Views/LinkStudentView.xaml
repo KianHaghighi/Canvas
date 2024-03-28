@@ -5,8 +5,34 @@
              Title="LinkStudentView">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Students"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <ListView ItemsSource="{Binding Students}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" Detail="{Binding Classification}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ListView ItemsSource="{Binding Courses}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding CourseName}" Detail="{Binding CourseDescription}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Label 
+            Text="Link a Student to a Course"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Button 
+            Text="Ok"
+            Clicked="OkClicked"
+         />
+        <Button 
+            Text="Cancel"
+            Clicked="CancelClicked"
+         />
     </VerticalStackLayout>
 </ContentPage>

@@ -16,6 +16,10 @@
             Text="Add Enrollment"
             Clicked="AddEnrollmentClicked"
             />
+        <Button
+                Text="Remove Enrollment"
+                Clicked="RemoveEnrollmentClick"
+                />
         <Button 
             Text="Add Course"
             Clicked="AddCourseClicked"

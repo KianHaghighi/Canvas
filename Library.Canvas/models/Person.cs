@@ -14,8 +14,8 @@ public class Person
 
     public override string ToString()
     {
-    string gradesString = string.Join(", ", Grades);
-    return $"Name: {Name}, Classification: {Classification}, Grades: {gradesString}";
+        string gradesString = string.Join(", ", Grades);
+        return $"Name: {Name}, Classification: {Classification}, Grades: {gradesString}";
     }
     public Person(string name, string classification, List<double> grades = null)
     {
@@ -23,4 +23,9 @@ public class Person
         Classification = classification;
         Grades = grades;
     }
+
+}
+public enum PersonClassification
+{
+    Freshman, Sophomore, Junior, Senior
 }

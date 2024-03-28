@@ -10,9 +10,10 @@ namespace Library.Canvas.Database
 {
     public static class FakeDatabase
     {
+        private static List<Person> people = new List<Person>();
         public static List<Person> People { 
             get {
-                return new List<Person>();
+                return people;
             }
         }
         public static List<Course> Courses

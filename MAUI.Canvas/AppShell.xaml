@@ -20,11 +20,11 @@
         ContentTemplate="{DataTemplate local2:StudentView}"
         Route="Student" />
     <ShellContent
-        Title="Student"
+        Title="Enrollment Detail"
         ContentTemplate="{DataTemplate local2:PersonDetailView}"
         Route="PersonDetail" />
     <ShellContent
-        Title="Student"
+        Title="Course Detail"
         ContentTemplate="{DataTemplate local2:CourseDetailView}"
         Route="CourseDetail" />
     <ShellContent
