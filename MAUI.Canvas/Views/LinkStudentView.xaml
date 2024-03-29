@@ -15,10 +15,14 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <Label 
+            Text="Courses"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />   
         <ListView ItemsSource="{Binding Courses}">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Text="{Binding CourseName}" Detail="{Binding CourseDescription}" />
+                    <TextCell Text="{Binding Name}" Detail="{Binding Description}" />
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

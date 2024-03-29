@@ -11,6 +11,7 @@ namespace Library.Canvas.Database
     public static class FakeDatabase
     {
         private static List<Person> people = new List<Person>();
+        private static List<Course> courses = new List<Course>();
         public static List<Person> People { 
             get {
                 return people;
@@ -20,7 +21,7 @@ namespace Library.Canvas.Database
         {
             get
             {
-                return new List<Course>();
+                return courses;
             }
         }
     }

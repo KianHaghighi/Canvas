@@ -21,12 +21,12 @@ namespace MAUI.Canvas.ViewModels
                 return new ObservableCollection<Person>(PersonService.Current.People);
             }
         }
-       /* public ObservableCollection<Person> Courses
+        public ObservableCollection<Course> Courses
         {
             get
             {
-                //return new ObservableCollection<Person>(CourseService.Current.Courses);
+                return new ObservableCollection<Course>(CourseService.Current.Courses);
             }
-        }*/
+        }
     }
 }

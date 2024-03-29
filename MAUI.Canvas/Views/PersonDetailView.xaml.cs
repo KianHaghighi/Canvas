@@ -20,8 +20,7 @@ public partial class PersonDetailView : ContentPage
         //consider adding a breakpoint here to see if the binding context is null
         //F and Kian is being added to the database properly
         (BindingContext as PersonDetailViewViewModel).AddPerson();
-        //((PersonDetailViewViewModel)BindingContext).DisplayData();
-
+        Shell.Current.GoToAsync("//Instructor");
     }
 
     private void CancelClick(object sender, EventArgs e)

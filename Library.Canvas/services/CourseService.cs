@@ -4,6 +4,13 @@ namespace Library.Canvas.Services;
 public class CourseService
 {
     private static CourseService? _instance;
+    public IEnumerable<Course> Courses
+    {
+        get
+        {
+            return FakeDatabase.Courses;
+        }
+    }
     public static CourseService Current
     {
         get
@@ -25,13 +32,6 @@ public class CourseService
         FakeDatabase.Courses.Add(course);
     }
 
-    public List<Course> Courses
-    {
-        get
-        {
-            return FakeDatabase.Courses;
-        }
-    }
 
     public IEnumerable<Course> Search(string query)
     {

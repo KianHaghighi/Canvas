@@ -35,10 +35,10 @@ namespace MAUI.Canvas.ViewModels
 
         private Course course;
 
-        public void AddCourse(Shell s)
+        public void AddCourse()
         {
             CourseService.Current.Add(course);
-            s.GoToAsync("//Instructor");
+            //s.GoToAsync("//Instructor");
         }
         public void AddPersonToCourse(Course course, Person person)
         {
