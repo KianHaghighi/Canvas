@@ -27,6 +27,10 @@ public class CourseService
     {
 
     }
+    public Course? Get(string code)
+    {
+        return Courses.FirstOrDefault(c => c.Code == code);
+    }
     public void Add(Course course)
     {
         FakeDatabase.Courses.Add(course);
@@ -39,5 +43,8 @@ public class CourseService
             || s.Description.ToUpper().Contains(query.ToUpper())
             || s.Code.ToUpper().Contains(query.ToUpper()));
     }
-
+    public void Remove(Course course)
+    {
+        FakeDatabase.Courses.Remove(course);
+    }
 }

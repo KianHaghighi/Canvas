@@ -8,6 +8,9 @@
             Text="STUDENT VIEW"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <Button 
+            Text="See Enrollments"
+            Clicked="SeeEnrollmentsClicked" />
         <Button
             Text="Cancel"
             Clicked="CancelClicked"

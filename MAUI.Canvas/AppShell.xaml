@@ -31,4 +31,8 @@
         Title="Link Student to Course"
         ContentTemplate="{DataTemplate local2:LinkStudentView}"
         Route="LinkStudent" />
+    <ShellContent 
+        Title="Edit Enrollments"
+        ContentTemplate="{DataTemplate local2:EditEnrollmentsView}"
+        Route="EditEnrollments" />
 </Shell>

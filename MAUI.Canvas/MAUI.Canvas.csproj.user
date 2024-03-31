@@ -9,6 +9,12 @@
     <MauiXaml Update="Views\CourseDetailView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\CourseModulesView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\EditEnrollmentsView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\InstructorView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

@@ -26,12 +26,23 @@ namespace MAUI.Canvas.ViewModels
         {
             s.GoToAsync($"//LinkStudent");
         }
+        public void EditEnrollmentClicked(Shell s)
+        {
+            /*if (SelectedPerson == null) { return; }
+            s.GoToAsync($"//PersonDetail?personId={SelectedPerson.Id}");*/
+            s.GoToAsync($"//EditEnrollments");
+        }
         public void RemoveEnrollmentClick()
         {
             if (SelectedPerson == null) { return; }
 
             PersonService.Current.Remove(SelectedPerson);
             RefreshView();
+        }
+        public void ViewModulesClick(Shell s)
+        {
+            if (SelectedCourse == null) { return; }
+            s.GoToAsync($"//CourseModules?courseCode={SelectedCourse.Code}");
         }
         public void RefreshView()
         {

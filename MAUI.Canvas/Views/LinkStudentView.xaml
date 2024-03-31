@@ -8,7 +8,7 @@
             Text="Students"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        <ListView ItemsSource="{Binding Students}">
+        <ListView ItemsSource="{Binding Students}" SelectedItem="{Binding SelectedStudent}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextCell Text="{Binding Name}" Detail="{Binding Classification}" />
@@ -19,7 +19,7 @@
             Text="Courses"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />   
-        <ListView ItemsSource="{Binding Courses}">
+        <ListView ItemsSource="{Binding Courses}" SelectedItem="{Binding SelectedCourse}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextCell Text="{Binding Name}" Detail="{Binding Description}" />

@@ -16,6 +16,10 @@ public partial class InstructorView : ContentPage
 	{
 		(BindingContext as InstructorViewViewModel)?.AddEnrollmentClick(Shell.Current);
     }
+    private void EditEnrollmentClicked(object sender, EventArgs e)
+    {
+        (BindingContext as InstructorViewViewModel).EditEnrollmentClicked(Shell.Current);
+    }
     private void RemoveEnrollmentClick(object sender, EventArgs e)
     {
         (BindingContext as InstructorViewViewModel).RemoveEnrollmentClick();
@@ -27,5 +31,13 @@ public partial class InstructorView : ContentPage
     private void LinkStudentClicked(object sender, EventArgs e)
     {
         (BindingContext as InstructorViewViewModel).LinkStudentClick(Shell.Current);
+    }
+    private void ViewModulesClicked(object sender, EventArgs e)
+    {
+        /*var courseCode = (BindingContext as InstructorViewViewModel)?.SelectedCourse?.Code;
+        if (courseCode != null)
+        {
+            Shell.Current.GoToAsync($"//ViewModules?courseCode={courseCode}");
+        }*/
     }
 }

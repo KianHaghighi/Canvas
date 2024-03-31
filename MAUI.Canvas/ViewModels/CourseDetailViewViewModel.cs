@@ -6,6 +6,7 @@ namespace MAUI.Canvas.ViewModels
 {
     internal class CourseDetailViewViewModel
     {
+
         public CourseDetailViewViewModel()
         {
             course = new Course();

@@ -6,13 +6,26 @@ namespace MAUI.Canvas.ViewModels
 {
     internal class LinkStudentViewViewModel
     {
-        public void OkClick(Shell s)
+        public Person SelectedStudent { get; set; }
+        public Course SelectedCourse { get; set; }
+        public LinkStudentViewViewModel(Course course, Person student)
         {
-            s.GoToAsync($"//LinkStudent");
+            this.SelectedStudent = student;
+            this.SelectedCourse = course;
         }
-        public void AddPersonToCourse(Course course, Person person)
+        public LinkStudentViewViewModel()
         {
-            course.Roster.Add(person);
+        }
+        public void AddPersonToCourse()
+        {
+            //couse null here
+            var course = this.SelectedCourse;
+            var student = this.SelectedStudent;
+            if (course == null || student == null)
+            {
+                return;
+            }
+            course.Roster.Add(student);
         }
         public ObservableCollection<Person> Students
         {

@@ -8,7 +8,7 @@ public class Course
     public string? Description { get; set; }
     public List<Person> Roster { get; set; }
     public List<Assignment> Assignments { get; set; }
-    public List<string> Modules { get; set; }
+    public List<Module> Modules { get; set; }
     public override string ToString()
 {
     string rosterString = string.Join(", ", Roster);
@@ -21,7 +21,7 @@ public class Course
     {
         Roster = new List<Person>();
         Assignments = new List<Assignment>();
-        Modules = new List<string>();
+        Modules = new List<Module>();
     }
     public Course(string code, string name, string description) : this()
     {
