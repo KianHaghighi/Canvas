@@ -41,6 +41,12 @@ namespace MAUI.Canvas.ViewModels
         }
         public void ViewModulesClick(Shell s)
         {
+            //SelectedCourse is null here
+            //theres no SelectedCourse property in the InstructorViewModel, only in LinkStudentView
+            //so I need to add a SelectedCourse property to the InstructorViewModel
+            //1.list the courses from a menu, and allow the user to select one
+            //maybe instead of a viewmodules view model, just add this functionality to the CourseDetailViewModel
+            //with a button on CourseDetail view model that says "View Modules"
             if (SelectedCourse == null) { return; }
             s.GoToAsync($"//CourseModules?courseCode={SelectedCourse.Code}");
         }

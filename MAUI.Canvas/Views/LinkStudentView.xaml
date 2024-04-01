@@ -26,12 +26,35 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <ListView ItemsSource="{Binding Courses}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label Text="{Binding Name}" />
+                            <Label Text="{Binding Description}" />
+                            <ListView ItemsSource="{Binding Modules}">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextCell Text="{Binding ModuleName}" Detail="{Binding ModuleDescription}" />
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
         <Label 
             Text="Link a Student to a Course"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         <Button 
-            Text="Ok"
+            Text="Add a Module" 
+            Clicked="AddModuleClicked"
+            />
+        <Button 
+            Text="Link Student"
             Clicked="OkClicked"
          />
         <Button 

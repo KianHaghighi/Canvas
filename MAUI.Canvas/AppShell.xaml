@@ -35,4 +35,8 @@
         Title="Edit Enrollments"
         ContentTemplate="{DataTemplate local2:EditEnrollmentsView}"
         Route="EditEnrollments" />
+    <ShellContent 
+        Title="Add a Module"
+        ContentTemplate="{DataTemplate local2:AddModuleView}"
+        Route="AddModuleView" />
 </Shell>

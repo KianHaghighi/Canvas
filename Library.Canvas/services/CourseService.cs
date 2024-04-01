@@ -47,4 +47,25 @@ public class CourseService
     {
         FakeDatabase.Courses.Remove(course);
     }
+    //functions for adding modules
+
+    //determine if a module is unique
+    public bool IsModuleUnique(Course course, string name)
+    {
+        foreach (Module module in course.Modules)
+        {
+            if (module.Name == name)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+    public void AddOrUpdateModule(Course course, Module module)
+    {
+        if (IsModuleUnique(course, module.Name))
+        {
+            course?.Modules?.Add(module);
+        }
+    }
 }

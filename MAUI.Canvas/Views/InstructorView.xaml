@@ -28,10 +28,9 @@
             Text="Add Course"
             Clicked="AddCourseClicked"
             />
-        <Button Text="Link a Student to Course" 
+        <Button Text="Edit Courses/Students" 
                 Clicked="LinkStudentClicked" 
         />
-        <Button Text="View Modules" Clicked="ViewModulesClicked"/>
     </VerticalStackLayout>
     
 </ContentPage>

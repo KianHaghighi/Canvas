@@ -1,5 +1,6 @@
 ﻿using Library.Canvas.Models;
 using Library.Canvas.Services;
+using System.Collections.ObjectModel;
 
 
 namespace MAUI.Canvas.ViewModels
@@ -35,6 +36,10 @@ namespace MAUI.Canvas.ViewModels
         }
 
         private Course course;
+        public void AddModules()
+        {
+            //implement
+        }
 
         public void AddCourse()
         {
@@ -45,5 +50,14 @@ namespace MAUI.Canvas.ViewModels
         {
             course.Roster.Add(person);
         }
+        //added to make courses visible in the view
+        public ObservableCollection<Course> Courses
+        {
+            get
+            {
+                return new ObservableCollection<Course>(CourseService.Current.Courses);
+            }
+        }
+        public Course SelectedCourse { get; set; }
     }
 }

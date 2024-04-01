@@ -18,7 +18,6 @@ namespace MAUI.Canvas.ViewModels
         }
         public void AddPersonToCourse()
         {
-            //couse null here
             var course = this.SelectedCourse;
             var student = this.SelectedStudent;
             if (course == null || student == null)
@@ -26,6 +25,16 @@ namespace MAUI.Canvas.ViewModels
                 return;
             }
             course.Roster.Add(student);
+        }
+        public void AddModules()
+        {
+            var module = new Module();
+            var course = this.SelectedCourse;
+            if (course == null)
+            {
+                return;
+            }
+            course.Modules.Add(module);
         }
         public ObservableCollection<Person> Students
         {

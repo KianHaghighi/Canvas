@@ -39,5 +39,6 @@ public partial class InstructorView : ContentPage
         {
             Shell.Current.GoToAsync($"//ViewModules?courseCode={courseCode}");
         }*/
+        (BindingContext as InstructorViewViewModel).ViewModulesClick(Shell.Current);
     }
 }
