@@ -6,4 +6,9 @@ public partial class AddModuleView : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void AddClicked(object sender, EventArgs e)
+    {
+		Shell.Current.GoToAsync("//LinkStudent");
+    }
 }

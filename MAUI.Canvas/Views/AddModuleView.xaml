@@ -4,8 +4,12 @@
              x:Class="MAUI.Canvas.Views.AddModuleView"
              Title="AddModuleView">
     <StackLayout>
-        <Label Text="Welcome to .NET MAUI!"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" />
+        <Label Text="Module Name" />
+        <Entry Text="{Binding ModuleName, Mode=TwoWay}" />
+
+        <Label Text="Module Description" />
+        <Entry Text="{Binding ModuleDescription, Mode=TwoWay}" />
+
+        <Button Text="Add Module" Command="{Binding AddModuleCommand}" Clicked="AddClicked"/>
     </StackLayout>
 </ContentPage>
