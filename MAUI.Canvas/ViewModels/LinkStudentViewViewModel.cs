@@ -1,13 +1,20 @@
 ﻿using Library.Canvas.Models;
+using Library.Canvas.Services;
 using System.Collections.ObjectModel;
 
-using Library.Canvas.Services;
 namespace MAUI.Canvas.ViewModels
 {
     internal class LinkStudentViewViewModel
     {
         public Person SelectedStudent { get; set; }
         public Course SelectedCourse { get; set; }
+        public Module module { get {
+                return new Module(ModuleName, ModuleDescription);
+            }
+        }
+        public string ModuleName { get; set;}
+        public string ModuleDescription { get; set;}
+
         public LinkStudentViewViewModel(Course course, Person student)
         {
             this.SelectedStudent = student;
@@ -26,15 +33,14 @@ namespace MAUI.Canvas.ViewModels
             }
             course.Roster.Add(student);
         }
-        public void AddModules()
+        public void AddModuleToCourse()
         {
-            var module = new Module();
             var course = this.SelectedCourse;
             if (course == null)
             {
                 return;
             }
-            course.Modules.Add(module);
+            this.SelectedCourse.Modules.Add(module);
         }
         public ObservableCollection<Person> Students
         {

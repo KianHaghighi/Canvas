@@ -49,6 +49,15 @@
             Text="Link a Student to a Course"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <Label Text="Module Name" />
+        
+        <Entry Text="{Binding ModuleName, Mode=TwoWay}" />
+
+        <Label Text="Module Description" />
+        <Entry Text="{Binding ModuleDescription, Mode=TwoWay}" />
+
+        <Button Text="Add Module" Clicked="AddModule"/>
+        
         <Button 
             Text="Add a Module" 
             Clicked="AddModuleClicked"

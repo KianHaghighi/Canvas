@@ -4,6 +4,7 @@
              x:Class="MAUI.Canvas.Views.AddModuleView"
              Title="AddModuleView">
     <StackLayout>
+        
         <Label Text="Module Name" />
         <Entry Text="{Binding ModuleName, Mode=TwoWay}" />
 

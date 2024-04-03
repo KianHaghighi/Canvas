@@ -26,7 +26,12 @@ public partial class LinkStudentView : ContentPage
     }
     private void AddModuleClicked(object sender, EventArgs e)
     {
-        //(BindingContext as LinkStudentViewViewModel).AddModules();
+        (BindingContext as LinkStudentViewViewModel).AddModuleToCourse();
         Shell.Current.GoToAsync("//AddModuleView");
+    }
+    private void AddModule(object sender, EventArgs e)
+    {
+        (BindingContext as LinkStudentViewViewModel).AddModuleToCourse();
+        Shell.Current.GoToAsync("//Instructor");
     }
 }
