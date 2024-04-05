@@ -36,7 +36,7 @@
                             <ListView ItemsSource="{Binding Modules}">
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
-                                        <TextCell Text="{Binding ModuleName}" Detail="{Binding ModuleDescription}" />
+                                        <TextCell Text="{Binding Name}" Detail="{Binding Description}" />
                                     </DataTemplate>
                                 </ListView.ItemTemplate>
                             </ListView>
@@ -66,6 +66,7 @@
             Text="Link Student"
             Clicked="OkClicked"
          />
+        <Button Text="Add Assignment" Clicked="AddAssignmentClicked"/>
         <Button 
             Text="Cancel"
             Clicked="CancelClicked"

@@ -8,9 +8,23 @@
             Text="STUDENT VIEW"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <ListView ItemsSource="{Binding Students}" SelectedItem="{Binding SelectedStudent}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" Detail="{Binding Classification}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ListView ItemsSource="{Binding EnrolledCourses}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" Detail="{Binding Description}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
         <Button 
-            Text="See Enrollments"
-            Clicked="SeeEnrollmentsClicked" />
+            Text="See Courses for Selected Student"
+            Clicked="SeeCoursesClicked" />
         <Button
             Text="Cancel"
             Clicked="CancelClicked"

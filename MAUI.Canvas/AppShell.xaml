@@ -39,4 +39,12 @@
         Title="Add a Module"
         ContentTemplate="{DataTemplate local2:AddModuleView}"
         Route="AddModuleView" />
+    <ShellContent 
+        Title="Add Assignment"
+        ContentTemplate="{DataTemplate local2:AddAssignmentView}"
+        Route="AddAssignmentView" />
+    <ShellContent 
+        Title="See Courses for Student"
+        ContentTemplate="{DataTemplate local2:SeeCoursesView}"
+        Route="SeeCoursesView" />
 </Shell>

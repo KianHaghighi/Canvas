@@ -34,4 +34,8 @@ public partial class LinkStudentView : ContentPage
         (BindingContext as LinkStudentViewViewModel).AddModuleToCourse();
         Shell.Current.GoToAsync("//Instructor");
     }
+    private void AddAssignmentClicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync("//AddAssignmentView");
+    }
 }

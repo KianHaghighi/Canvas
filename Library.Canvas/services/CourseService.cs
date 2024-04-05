@@ -1,5 +1,9 @@
 using Library.Canvas.Database;
 using Library.Canvas.Models;
+
+using System.Collections.ObjectModel;
+
+
 namespace Library.Canvas.Services;
 public class CourseService
 {
@@ -36,7 +40,10 @@ public class CourseService
         FakeDatabase.Courses.Add(course);
     }
 
-
+    public IEnumerable<Course> GetCoursesForStudent(Person student)
+    {
+        return Courses.Where(course => course.Roster.Contains(student));
+    }
     public IEnumerable<Course> Search(string query)
     {
         return Courses.Where(s => s.Name.ToUpper().Contains(query.ToUpper())
@@ -67,5 +74,9 @@ public class CourseService
         {
             course?.Modules?.Add(module);
         }
+    }
+    public Module? GetModule(Course course, string name)
+    {
+        return course?.Modules?.FirstOrDefault(m => m.Name == name);
     }
 }
