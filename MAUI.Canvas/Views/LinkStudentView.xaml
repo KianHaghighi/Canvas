@@ -59,7 +59,7 @@
         <Button Text="Add Module" Clicked="AddModule"/>
         
         <Button 
-            Text="Add a Module" 
+            Text="Add an Assignment" 
             Clicked="AddModuleClicked"
             />
         <Button 
