@@ -44,10 +44,6 @@ namespace MAUI.Canvas.ViewModels
         public IEnumerable<Course> CoursesForSelectedStudent
         {
             get { return GetCoursesForStudent(SelectedStudent); }
-           /* get
-            {
-                yield return new Course { };
-            }*/
         }
         public ObservableCollection<Person> Students
         {

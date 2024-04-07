@@ -23,5 +23,31 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <ListView ItemsSource="{Binding CoursesForSelectedStudent}">
+    <ListView.ItemTemplate>
+        <DataTemplate>
+            <ViewCell>
+                <StackLayout>
+                    <Label Text="{Binding Name}" />
+                    <Label Text="{Binding Description}" />
+                    <ListView ItemsSource="{Binding Modules}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <TextCell Text="{Binding Name}" Detail="{Binding Description}" />
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <ListView ItemsSource="{Binding Assignments}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <TextCell Text="{Binding Name}" Detail="{Binding Description}" />
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </ViewCell>
+        </DataTemplate>
+    </ListView.ItemTemplate>
+</ListView>
     </VerticalStackLayout>
 </ContentPage>
