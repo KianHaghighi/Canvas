@@ -8,5 +8,8 @@ namespace MAUI.Canvas.ViewModels
 {
     internal class AddAssignmentViewModel
     {
+        public AddAssignmentViewModel()
+        {
+        }
     }
 }

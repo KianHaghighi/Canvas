@@ -60,13 +60,12 @@
         
         <Button 
             Text="Add an Assignment" 
-            Clicked="AddModuleClicked"
+            Clicked="AddAssignmentClicked"
             />
         <Button 
             Text="Link Student"
             Clicked="OkClicked"
          />
-        <Button Text="Add Assignment" Clicked="AddAssignmentClicked"/>
         <Button 
             Text="Cancel"
             Clicked="CancelClicked"

@@ -4,9 +4,16 @@
              x:Class="MAUI.Canvas.Views.AddAssignmentView"
              Title="AddAssignmentView">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Label Text="Add Assignment" VerticalOptions="Center" HorizontalOptions="Center" />
+
+        <Entry Placeholder="Name" Text="{Binding AssignmentName}" />
+        <Entry Placeholder="Description" Text="{Binding AssignmentDescription}" />
+        <Entry Placeholder="Total Available Points" Text="{Binding AssignmentTotalAvailablePoints}" Keyboard="Numeric" />
+        <DatePicker Date="{Binding AssignmentDueDate}" />
+
+        <Button Text="Add Assignment" Command="{Binding AddAssignmentCommand}" />
+
+        <!-- Rest of your XAML code... -->
+        <Button Text="Cancel" Clicked="CancelClicked"/>
     </VerticalStackLayout>
 </ContentPage>
