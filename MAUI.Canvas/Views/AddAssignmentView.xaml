@@ -11,7 +11,8 @@
         <Entry Placeholder="Total Available Points" Text="{Binding AssignmentTotalAvailablePoints}" Keyboard="Numeric" />
         <DatePicker Date="{Binding AssignmentDueDate}" />
 
-        <Button Text="Add Assignment" Command="{Binding AddAssignmentCommand}" />
+        <!--<Button Text="Add Assignment" Command="{Binding AddAssignmentCommand}" />-->
+        <Button Text="Add Assignment" Clicked="AddAssignmentClicked" />
 
         <!-- Rest of your XAML code... -->
         <Button Text="Cancel" Clicked="CancelClicked"/>
