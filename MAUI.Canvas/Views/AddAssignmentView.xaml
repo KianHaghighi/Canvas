@@ -4,6 +4,18 @@
              x:Class="MAUI.Canvas.Views.AddAssignmentView"
              Title="AddAssignmentView">
     <VerticalStackLayout>
+        <Label 
+            Text="Courses"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />   
+        <ListView ItemsSource="{Binding Courses}" SelectedItem="{Binding SelectedCourse}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" Detail="{Binding Description}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
         <Label Text="Add Assignment" VerticalOptions="Center" HorizontalOptions="Center" />
 
         <Entry Placeholder="Name" Text="{Binding AssignmentName}" />

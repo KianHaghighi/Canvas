@@ -7,6 +7,7 @@ public partial class AddAssignmentView : ContentPage
 	public AddAssignmentView()
 	{
 		InitializeComponent();
+		BindingContext = new AddAssignmentViewModel();
 	}
 	private void CancelClicked(object sender, EventArgs e)
 	{

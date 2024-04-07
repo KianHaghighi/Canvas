@@ -13,6 +13,12 @@ namespace MAUI.Canvas.ViewModels
 {
     internal class AddAssignmentViewModel : INotifyPropertyChanged
     {
+        public string AssignmentName { get; set; }
+        public string AssignmentDescription { get; set; }
+        public int AssignmentTotalAvailablePoints { get; set; }
+        public DateTime AssignmentDueDate { get; set; }
+        public Course SelectedCourse { get; set; }
+        
         public AddAssignmentViewModel()
         {
         }
@@ -21,7 +27,8 @@ namespace MAUI.Canvas.ViewModels
 
         public void AddAssignment()
         {
-
+            var course = this.SelectedCourse;
+            course.Assignments.Add(new Assignment(AssignmentName, AssignmentDescription, AssignmentTotalAvailablePoints, AssignmentDueDate));
         }
         public ObservableCollection<Person> Students
         {
