@@ -17,4 +17,8 @@ public partial class StudentView : ContentPage
 		Shell.Current.GoToAsync("//SeeCoursesView");
 		//(BindingContext as StudentViewViewModel)?.SeeCoursesClick (Shell.Current);
 	}
+	private void SubmitAnAssignmentClicked(object sender, EventArgs e)
+	{
+        Shell.Current.GoToAsync("//SubmitAssignmentView");
+    }
 }

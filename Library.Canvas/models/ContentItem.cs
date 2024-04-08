@@ -6,7 +6,7 @@ public class ContentItem
     public string? Name { get; set; }
     public string? Description { get; set; }
     public string? Path { get; set; }
-    public ContentItem(string name, string description, string path)
+    public ContentItem(string name, string description, string path = null)
     {
         Name = name;
         Description = description;

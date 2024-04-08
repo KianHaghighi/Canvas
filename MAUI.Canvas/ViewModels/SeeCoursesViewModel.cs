@@ -17,6 +17,9 @@ namespace MAUI.Canvas.ViewModels
         private Course? course;
         private Person? student;
         private Person _selectedStudent;
+
+        //for submit assignment
+        private Assignment SelectedAssignment;
         public SeeCoursesViewModel(int id)
         {
             student = PersonService.Current.People.FirstOrDefault(p => p.Id == id);
@@ -26,7 +29,11 @@ namespace MAUI.Canvas.ViewModels
         {
             _courseService = courseService;
         }
-
+        public SeeCoursesViewModel(int id, CourseService courseService)
+        {
+            _courseService = courseService;
+            student = PersonService.Current.People.FirstOrDefault(p => p.Id == id);
+        }
         public Person SelectedStudent
         {
             get { return _selectedStudent; }
@@ -64,11 +71,6 @@ namespace MAUI.Canvas.ViewModels
         protected virtual void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-        public SeeCoursesViewModel(int id, CourseService courseService)
-        {
-            _courseService = courseService;
-            student = PersonService.Current.People.FirstOrDefault(p => p.Id == id);
         }
     }
 }

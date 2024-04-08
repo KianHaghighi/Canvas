@@ -14,7 +14,15 @@ public class Person
 
     public override string ToString()
     {
-        string gradesString = string.Join(", ", Grades);
+        string? gradesString;
+        if (Grades != null)
+        {
+            gradesString = string.Join(", ", Grades);
+        }
+        else
+        {
+            gradesString = "No grades available";
+        }
         return $"Name: {Name}, Classification: {Classification}, Grades: {gradesString}";
     }
     public Person(string name, string classification, List<double> grades = null)

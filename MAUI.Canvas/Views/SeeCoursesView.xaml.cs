@@ -13,4 +13,8 @@ public partial class SeeCoursesView : ContentPage
 		InitializeComponent();
 		BindingContext = new SeeCoursesViewModel(studentId);
 	}
+	private void CancelClicked(object sender, EventArgs e)
+	{
+        Shell.Current.GoToAsync("//Student");
+    }
 }

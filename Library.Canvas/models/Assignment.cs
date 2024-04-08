@@ -7,6 +7,8 @@ public class Assignment
     public string? Description { get; set; }
     public int TotalAvailablePoints { get; set; }
     public DateTime DueDate { get; set; }
+    public List<ContentItem> Submissions { get; set; }
+
     public override string ToString()
     {
         return $"Name: {Name}";
@@ -17,5 +19,6 @@ public class Assignment
         Description = description;
         TotalAvailablePoints = totalAvailablePoints;
         DueDate = dueDate;
+        Submissions = new List<ContentItem>();
     }
 }

@@ -25,6 +25,9 @@
         <Button 
             Text="See Courses for Selected Student"
             Clicked="SeeCoursesClicked" />
+        <Button 
+            Text="Submit an Assignment"
+            Clicked="SubmitAnAssignmentClicked"/>
         <Button
             Text="Cancel"
             Clicked="CancelClicked"

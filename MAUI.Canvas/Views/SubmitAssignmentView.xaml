@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MAUI.Canvas.Views.SeeCoursesView"
-             Title="SeeCoursesView">
+             x:Class="MAUI.Canvas.Views.SubmitAssignmentView"
+             Title="SubmitAssignmentView">
     <VerticalStackLayout>
         <Label 
         Text="Students"
         VerticalOptions="Center" 
         HorizontalOptions="Center" />
-            <ListView ItemsSource="{Binding Students}" SelectedItem="{Binding SelectedStudent}">
+        <ListView ItemsSource="{Binding Students}" SelectedItem="{Binding SelectedStudent}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextCell Text="{Binding Name}" Detail="{Binding Classification}" />
@@ -37,7 +37,7 @@
                                     </DataTemplate>
                                 </ListView.ItemTemplate>
                             </ListView>
-                            <ListView ItemsSource="{Binding Assignments}">
+                            <ListView ItemsSource="{Binding Assignments}" SelectedItem="{Binding SelectedAssignment}">
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
                                         <TextCell Text="{Binding Name}" Detail="{Binding Description}" />
@@ -49,6 +49,8 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <Entry Placeholder="Enter Assignment" Text="{Binding Description}" />
+        <Button Text="Submit" Clicked="SubmitClicked"/>
         <Button Text="Cancel" Clicked="CancelClicked"/>
     </VerticalStackLayout>
 </ContentPage>

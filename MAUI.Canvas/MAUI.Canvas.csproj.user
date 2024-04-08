@@ -36,5 +36,8 @@
     <MauiXaml Update="Views\StudentView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\SubmitAssignmentView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
   </ItemGroup>
 </Project>
