@@ -12,6 +12,9 @@
     <MauiXaml Update="Views\AddModuleView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\AssignGradeView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\CourseDetailView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

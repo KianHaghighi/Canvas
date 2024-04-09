@@ -51,4 +51,8 @@
         Title="Submit Assignment for Student"
         ContentTemplate="{DataTemplate local2:SubmitAssignmentView}"
         Route="SubmitAssignmentView" />
+    <ShellContent
+        Title="Assign a Grade for a Submission"
+        ContentTemplate="{DataTemplate local2:AssignGradeView}"
+        Route="AssignGradeView" />
 </Shell>

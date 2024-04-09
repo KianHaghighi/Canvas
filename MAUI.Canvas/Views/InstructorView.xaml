@@ -31,6 +31,8 @@
         <Button Text="Edit Courses/Students" 
                 Clicked="LinkStudentClicked" 
         />
+        <Button Text="Assign a Grade to a Submission"
+                Clicked="AssignGradeClicked"/>
     </VerticalStackLayout>
     
 </ContentPage>

@@ -58,6 +58,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = MAUI.Canvas.Views.AddModul
 build_metadata.AdditionalFiles.TargetPath = Views\AddModuleView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\AddModuleView.xaml
 
+[C:/Users/kianh/CanvasApp/Canvas/MAUI.Canvas/Views/AssignGradeView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI.Canvas.Views.AssignGradeView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AssignGradeView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AssignGradeView.xaml
+
 [C:/Users/kianh/CanvasApp/Canvas/MAUI.Canvas/Views/CourseDetailView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MAUI.Canvas.Views.CourseDetailView.xaml

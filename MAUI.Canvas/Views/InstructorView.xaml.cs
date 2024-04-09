@@ -41,4 +41,8 @@ public partial class InstructorView : ContentPage
         }*/
         (BindingContext as InstructorViewViewModel).ViewModulesClick(Shell.Current);
     }
+    private void AssignGradeClicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync("//AssignGradeView");
+    }   
 }
