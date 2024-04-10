@@ -8,4 +8,8 @@ public partial class AssignGradeView : ContentPage
 		InitializeComponent();
 		BindingContext = new AssignGradeViewModel();
 	}
+	private void CancelClicked(object sender, EventArgs e)
+	{
+        Shell.Current.GoToAsync("//Instructor");
+    }
 }

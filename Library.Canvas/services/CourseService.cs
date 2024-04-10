@@ -15,6 +15,13 @@ public class CourseService
             return FakeDatabase.Courses;
         }
     }
+    public IEnumerable<Assignment> Assignments
+    {
+        get
+        {
+            return FakeDatabase.Assignments;
+        }
+    }
     public static CourseService Current
     {
         get
@@ -78,5 +85,9 @@ public class CourseService
     public Module? GetModule(Course course, string name)
     {
         return course?.Modules?.FirstOrDefault(m => m.Name == name);
+    }
+    public ObservableCollection<ContentItem> GetSubmissions(Assignment assignment)
+    {
+        return new ObservableCollection<ContentItem>(assignment.Submissions);
     }
 }
