@@ -17,17 +17,19 @@ namespace MAUI.Canvas.ViewModels
         private CourseService _courseService;
         private Course? course;
         private Person? student;
+        private Assignment? assignment;
         private Person _selectedStudent;
-        private Assignment _selectedAssignment;
+        private Assignment? _selectedAssignment;
         private string description;
 
         protected virtual void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-        public SubmitAssignmentViewModel(int id)
+        public SubmitAssignmentViewModel(int id, string assignment_name)
         {
             student = PersonService.Current.People.FirstOrDefault(p => p.Id == id);
+            assignment = CourseService.Current.Assignments.FirstOrDefault(a => a.Name == assignment_name);
         }
         public SubmitAssignmentViewModel(CourseService courseService)
         {
@@ -58,6 +60,7 @@ namespace MAUI.Canvas.ViewModels
             set
             {
                 _selectedAssignment = value;
+                OnPropertyChanged(nameof(AssignmentsForSelectedCourse));
                 OnPropertyChanged(nameof(SelectedAssignment));
             }
         }
@@ -65,21 +68,19 @@ namespace MAUI.Canvas.ViewModels
         {
             return Courses.Where(course => course.Roster.Contains(student));
         }
+        //maybe the error is in this function
         public IEnumerable<Course> CoursesForSelectedStudent
         {
             get { return GetCoursesForStudent(SelectedStudent); }
         }
-        /*public IEnumerable<Assignment> AssignmentsForSelectedCourse
+        public IEnumerable<Assignment> AssignmentsForSelectedCourse
         {
             get
             {
-                if (course == null)
-                {
-                    return Enumerable.Empty<Assignment>();
-                }
-                return course.Assignments;
+               var _courses = GetCoursesForStudent(SelectedStudent);
+               return _courses.SelectMany(c => c.Assignments);
             }
-        }*/
+        }
         public ObservableCollection<Person> Students
         {
             get
@@ -94,12 +95,21 @@ namespace MAUI.Canvas.ViewModels
                 return new ObservableCollection<Course>(CourseService.Current.Courses);
             }
         }
+        public ObservableCollection<Assignment> Assignments
+        {
+            get
+            {
+                return new ObservableCollection<Assignment>(CourseService.Current.Assignments);
+            }
+        }
         public void SubmitAssignment()
         {
-            if (SelectedAssignment != null)
+            var assignment = this.SelectedAssignment;
+            if (assignment != null)
             {
-                SelectedAssignment.Submissions.Add(new ContentItem(student.Name, description));
+                assignment.Submissions.Add(new ContentItem(student.Name, description));
             }
+            
         }
     }
 }

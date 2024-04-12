@@ -49,7 +49,14 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Entry Placeholder="Enter Assignment" Text="{Binding Description}" />
+        <ListView ItemsSource="{Binding AssignmentsForSelectedCourse}" SelectedItem="{Binding SelectedAssignment}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" Detail="{Binding Description}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            </ListView>
+            <Entry Placeholder="Enter Assignment" Text="{Binding Description}" />
         <Button Text="Submit" Clicked="SubmitClicked"/>
         <Button Text="Cancel" Clicked="CancelClicked"/>
     </VerticalStackLayout>

@@ -37,7 +37,7 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <ListView ItemsSource="{Binding Submissions}" SelectedItem="{Binding SelectedSubmission}">
+        <ListView ItemsSource="{Binding SubmissionsForSelectedAssignment}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextCell Text="{Binding Name}"/>

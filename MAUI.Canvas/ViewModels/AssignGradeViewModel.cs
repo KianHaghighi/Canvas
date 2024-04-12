@@ -14,7 +14,25 @@ namespace MAUI.Canvas.ViewModels
     public class AssignGradeViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
+        private Assignment _selectedAssignment;
         private ContentItem _selectedSubmission;
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+        public Assignment SelectedAssignment
+        {
+            get
+            {
+                return _selectedAssignment;
+            }
+            set
+            {
+                _selectedAssignment = value;
+                OnPropertyChanged(nameof(SelectedAssignment));
+                OnPropertyChanged(nameof(SubmissionsForSelectedAssignment));
+            }
+        }
         public ContentItem SelectedSubmission
         {
             get
@@ -24,7 +42,7 @@ namespace MAUI.Canvas.ViewModels
             set
             {
                 _selectedSubmission = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedSubmission)));
+                OnPropertyChanged(nameof(SelectedSubmission));
             }
         }
 
@@ -73,6 +91,18 @@ namespace MAUI.Canvas.ViewModels
                 return new Dictionary<Assignment, ObservableCollection<ContentItem>>(CourseService.Current.Assignments.ToDictionary(a => a, a => new ObservableCollection<ContentItem>(a.Submissions)));
             }
         }
+        public IEnumerable<ContentItem> GetSubmissionsForAssignment(Assignment assignment)
+        {
+            //return Submissions.Where(s => s.Submissions.Contains(s));
+            if (assignment == null)
+            {
+                return new List<ContentItem>();
+            }
+            return assignment.Submissions;
+        }
+        public IEnumerable<ContentItem> SubmissionsForSelectedAssignment
+        {
+            get { return GetSubmissionsForAssignment(SelectedAssignment); }
+        }
     }
-
 }

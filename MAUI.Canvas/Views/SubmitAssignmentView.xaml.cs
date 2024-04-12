@@ -13,10 +13,15 @@ public partial class SubmitAssignmentView : ContentPage
     {
         set; get;
     }
+    public string assignmentId
+    {
+        set; get;
+    }
     public SubmitAssignmentView()
     {
         InitializeComponent();
-        BindingContext = new SubmitAssignmentViewModel(studentId);
+        //maybe add assignment as well to the parameters of the constructor
+        BindingContext = new SubmitAssignmentViewModel(studentId, assignmentId);
     }
     private void CancelClicked(object sender, EventArgs e)
     {
