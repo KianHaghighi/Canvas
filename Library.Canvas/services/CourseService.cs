@@ -22,6 +22,13 @@ public class CourseService
             return FakeDatabase.Assignments;
         }
     }
+    public IEnumerable<ContentItem> Submissions
+    {
+        get
+        {
+            return FakeDatabase.Courses.SelectMany(m => m.Assignments).SelectMany(a => a.Submissions);
+        }
+    }
     public static CourseService Current
     {
         get

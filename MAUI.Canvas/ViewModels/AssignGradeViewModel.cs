@@ -29,8 +29,8 @@ namespace MAUI.Canvas.ViewModels
             set
             {
                 _selectedAssignment = value;
-                OnPropertyChanged(nameof(SelectedAssignment));
                 OnPropertyChanged(nameof(SubmissionsForSelectedAssignment));
+                OnPropertyChanged(nameof(SelectedAssignment));
             }
         }
         public ContentItem SelectedSubmission
@@ -81,7 +81,7 @@ namespace MAUI.Canvas.ViewModels
         {
             get
             {
-                return new ObservableCollection<ContentItem>(CourseService.Current.Assignments.SelectMany(a => a.Submissions));
+                return new ObservableCollection<ContentItem>(CourseService.Current.Submissions);
             }
         }
         public Dictionary<Assignment, ObservableCollection<ContentItem>> AssignmentSubmissions
@@ -98,11 +98,33 @@ namespace MAUI.Canvas.ViewModels
             {
                 return new List<ContentItem>();
             }
-            return assignment.Submissions;
+            //return assignment.Submissions;
+            return Submissions;
         }
+
         public IEnumerable<ContentItem> SubmissionsForSelectedAssignment
         {
             get { return GetSubmissionsForAssignment(SelectedAssignment); }
         }
+        public IEnumerable<Course> GetCoursesForStudent(Person student)
+        {
+            return Courses.Where(course => course.Roster.Contains(student));
+        }
+
+        //maybe the error is in this function
+        /*
+         * public IEnumerable<Course> CoursesForSelectedStudent
+        {
+            get { return GetCoursesForStudent(SelectedStudent); }
+        }
+        public IEnumerable<Assignment> AssignmentsForSelectedCourse
+        {
+            get
+            {
+               var _courses = GetCoursesForStudent(SelectedStudent);
+               return _courses.SelectMany(c => c.Assignments);
+            }
+        }
+         */
     }
 }

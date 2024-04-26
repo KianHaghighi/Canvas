@@ -25,15 +25,9 @@
                                     </DataTemplate>
                                 </ListView.ItemTemplate>
                             </ListView>
+                            <Label Text="First Submission"/>
                         </StackLayout>
                     </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        <ListView ItemsSource="{Binding Assignments}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextCell Text="{Binding Name}" Detail="{Binding Description}" />
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
@@ -44,7 +38,8 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button Text="Assign Grade to Selected Submission"/>
+        <Entry Placeholder="Grade" Text="{Binding Grade}"/>
+        <Button Text="Assign Grade to Selected Submission" Clicked="AssignClicked"/>
         <Button Text="Cancel" Clicked="CancelClicked"/>
     </VerticalStackLayout>
 </ContentPage>
